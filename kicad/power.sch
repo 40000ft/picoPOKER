@@ -1,0 +1,1146 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:picoPOKER-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "picoPOKER Keyboard"
+Date "2000-12-31"
+Rev "-"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +3V3 #PWR?
+U 1 1 5715E7F2
+P 7250 1300
+F 0 "#PWR?" H 7250 1150 50  0001 C CNN
+F 1 "+3V3" H 7250 1440 50  0000 C CNN
+F 2 "" H 7250 1300 50  0000 C CNN
+F 3 "" H 7250 1300 50  0000 C CNN
+	1    7250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCOM #PWR?
+U 1 1 5715E7F8
+P 5850 1300
+F 0 "#PWR?" H 5850 1150 50  0001 C CNN
+F 1 "VCOM" H 5850 1450 50  0000 C CNN
+F 2 "" H 5850 1300 50  0000 C CNN
+F 3 "" H 5850 1300 50  0000 C CNN
+	1    5850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5715E80B
+P 7250 2050
+F 0 "C?" H 7275 2150 50  0000 L CNN
+F 1 "1uF" H 7275 1950 50  0000 L CNN
+F 2 "" H 7288 1900 50  0000 C CNN
+F 3 "" H 7250 2050 50  0000 C CNN
+	1    7250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5715E812
+P 7250 2300
+F 0 "#PWR?" H 7250 2050 50  0001 C CNN
+F 1 "GND" H 7250 2150 50  0000 C CNN
+F 2 "" H 7250 2300 50  0000 C CNN
+F 3 "" H 7250 2300 50  0000 C CNN
+	1    7250 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 7350 1800 0    60   ~ 0
+Output Cap Reqs:\n> 1.0uF for stability\nESR < 300 mOhm\nX7R/X5R ceramic
+NoConn ~ 7050 1950
+$Comp
+L CONN_01X04 P?
+U 1 1 5715E829
+P 3500 1250
+F 0 "P?" H 3500 1500 50  0000 C CNN
+F 1 "CONN_01X04" V 3600 1250 50  0000 C CNN
+F 2 "" H 3500 1250 50  0000 C CNN
+F 3 "" H 3500 1250 50  0000 C CNN
+	1    3500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5715E830
+P 3200 1500
+F 0 "#PWR?" H 3200 1250 50  0001 C CNN
+F 1 "GND" H 3200 1350 50  0000 C CNN
+F 2 "" H 3200 1500 50  0000 C CNN
+F 3 "" H 3200 1500 50  0000 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5715E836
+P 3200 1000
+F 0 "#PWR?" H 3200 850 50  0001 C CNN
+F 1 "+BATT" H 3200 1140 50  0000 C CNN
+F 2 "" H 3200 1000 50  0000 C CNN
+F 3 "" H 3200 1000 50  0000 C CNN
+	1    3200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP73831/2 U?
+U 1 1 5715E83C
+P 1900 1200
+F 0 "U?" H 1900 950 50  0000 C CNN
+F 1 "MCP73831/2" H 1900 1450 50  0000 C CNN
+F 2 "" H 1900 1100 50  0000 C CNN
+F 3 "" H 1900 1100 50  0000 C CNN
+	1    1900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5715E843
+P 2550 1450
+F 0 "R?" V 2630 1450 50  0000 C CNN
+F 1 "2k" V 2550 1450 50  0000 C CNN
+F 2 "" V 2480 1450 50  0000 C CNN
+F 3 "" H 2550 1450 50  0000 C CNN
+	1    2550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5715E84A
+P 2350 1700
+F 0 "#PWR?" H 2350 1450 50  0001 C CNN
+F 1 "GND" H 2350 1550 50  0000 C CNN
+F 2 "" H 2350 1700 50  0000 C CNN
+F 3 "" H 2350 1700 50  0000 C CNN
+	1    2350 1700
+	1    0    0    -1  
+$EndComp
+Text Notes 1750 1850 0    60   ~ 0
+10k = 0.1A\n5k = 0.2A\n2k = 0.5A\n1k = 1A
+$Comp
+L C C?
+U 1 1 5715E851
+P 2800 1450
+F 0 "C?" H 2825 1550 50  0000 L CNN
+F 1 "10uF" H 2825 1350 50  0000 L CNN
+F 2 "" H 2838 1300 50  0000 C CNN
+F 3 "" H 2800 1450 50  0000 C CNN
+	1    2800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5715E858
+P 2800 1700
+F 0 "#PWR?" H 2800 1450 50  0001 C CNN
+F 1 "GND" H 2800 1550 50  0000 C CNN
+F 2 "" H 2800 1700 50  0000 C CNN
+F 3 "" H 2800 1700 50  0000 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5715E85E
+P 2800 1000
+F 0 "#PWR?" H 2800 850 50  0001 C CNN
+F 1 "+BATT" H 2800 1140 50  0000 C CNN
+F 2 "" H 2800 1000 50  0000 C CNN
+F 3 "" H 2800 1000 50  0000 C CNN
+	1    2800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5715E864
+P 700 1000
+F 0 "#PWR?" H 700 850 50  0001 C CNN
+F 1 "+5V" H 700 1140 50  0000 C CNN
+F 2 "" H 700 1000 50  0000 C CNN
+F 3 "" H 700 1000 50  0000 C CNN
+	1    700  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5715E86A
+P 1350 1550
+F 0 "R?" V 1430 1550 50  0000 C CNN
+F 1 "2k" V 1350 1550 50  0000 C CNN
+F 2 "" V 1280 1550 50  0000 C CNN
+F 3 "" H 1350 1550 50  0000 C CNN
+	1    1350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5715E871
+P 1100 1400
+F 0 "D?" H 1100 1500 50  0000 C CNN
+F 1 "LED" H 1100 1300 50  0000 C CNN
+F 2 "" H 1100 1400 50  0000 C CNN
+F 3 "" H 1100 1400 50  0000 C CNN
+	1    1100 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5715E8B2
+P 700 1400
+F 0 "C?" H 725 1500 50  0000 L CNN
+F 1 "10uF" H 725 1300 50  0000 L CNN
+F 2 "" H 738 1250 50  0000 C CNN
+F 3 "" H 700 1400 50  0000 C CNN
+	1    700  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5715E8B9
+P 700 1650
+F 0 "#PWR?" H 700 1400 50  0001 C CNN
+F 1 "GND" H 700 1500 50  0000 C CNN
+F 2 "" H 700 1650 50  0000 C CNN
+F 3 "" H 700 1650 50  0000 C CNN
+	1    700  1650
+	1    0    0    -1  
+$EndComp
+Text Notes 6000 3100 0    60   ~ 0
+BLE High-side Power Switch\nBLE Load Shed for Deep Sleep
+Text Notes 7350 3800 0    60   ~ 0
+MIC9406X has internal pull-down \n  on EN input consuming 2-4uA.\nBF LE Friend has on-board MIC5225 \n  3.3V LDO and bulk 10uF input cap.\nBF LE Friend VIN range: 16-3.3V
+Text Notes 2900 2500 2    60   ~ 0
+BLE\nVIN
+$Comp
+L VCC #PWR?
+U 1 1 57160138
+P 2850 2750
+F 0 "#PWR?" H 2850 2600 50  0001 C CNN
+F 1 "VCC" H 2850 2900 50  0000 C CNN
+F 2 "" H 2850 2750 50  0000 C CNN
+F 3 "" H 2850 2750 50  0000 C CNN
+	1    2850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5716013E
+P 2850 2750
+F 0 "#FLG?" H 2850 2845 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 2930 50  0000 C CNN
+F 2 "" H 2850 2750 50  0000 C CNN
+F 3 "" H 2850 2750 50  0000 C CNN
+	1    2850 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCOM #PWR?
+U 1 1 57160144
+P 2400 2750
+F 0 "#PWR?" H 2400 2600 50  0001 C CNN
+F 1 "VCOM" H 2400 2900 50  0000 C CNN
+F 2 "" H 2400 2750 50  0000 C CNN
+F 3 "" H 2400 2750 50  0000 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5716014A
+P 2400 2750
+F 0 "#FLG?" H 2400 2845 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 2930 50  0000 C CNN
+F 2 "" H 2400 2750 50  0000 C CNN
+F 3 "" H 2400 2750 50  0000 C CNN
+	1    2400 2750
+	-1   0    0    1   
+$EndComp
+Text Notes 2050 2500 2    60   ~ 0
+MCU\nLDO
+Text Notes 1600 2500 2    60   ~ 0
+USB
+Text Notes 1150 2500 2    60   ~ 0
+LiPo
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 57160153
+P 1050 2750
+F 0 "#FLG?" H 1050 2845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 2930 50  0000 C CNN
+F 2 "" H 1050 2750 50  0000 C CNN
+F 3 "" H 1050 2750 50  0000 C CNN
+	1    1050 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 57160159
+P 1050 2750
+F 0 "#PWR?" H 1050 2600 50  0001 C CNN
+F 1 "+BATT" H 1050 2890 50  0000 C CNN
+F 2 "" H 1050 2750 50  0000 C CNN
+F 3 "" H 1050 2750 50  0000 C CNN
+	1    1050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5716015F
+P 3400 2800
+F 0 "#FLG?" H 3400 2895 50  0001 C CNN
+F 1 "PWR_FLAG" H 3400 2980 50  0000 C CNN
+F 2 "" H 3400 2800 50  0000 C CNN
+F 3 "" H 3400 2800 50  0000 C CNN
+	1    3400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57160165
+P 3400 2800
+F 0 "#PWR?" H 3400 2550 50  0001 C CNN
+F 1 "GND" H 3400 2650 50  0000 C CNN
+F 2 "" H 3400 2800 50  0000 C CNN
+F 3 "" H 3400 2800 50  0000 C CNN
+	1    3400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5716016B
+P 1950 2750
+F 0 "#FLG?" H 1950 2845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 2930 50  0000 C CNN
+F 2 "" H 1950 2750 50  0000 C CNN
+F 3 "" H 1950 2750 50  0000 C CNN
+	1    1950 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 57160171
+P 1950 2750
+F 0 "#PWR?" H 1950 2600 50  0001 C CNN
+F 1 "+3V3" H 1950 2890 50  0000 C CNN
+F 2 "" H 1950 2750 50  0000 C CNN
+F 3 "" H 1950 2750 50  0000 C CNN
+	1    1950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57160177
+P 1500 2750
+F 0 "#PWR?" H 1500 2600 50  0001 C CNN
+F 1 "+5V" H 1500 2890 50  0000 C CNN
+F 2 "" H 1500 2750 50  0000 C CNN
+F 3 "" H 1500 2750 50  0000 C CNN
+	1    1500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5716017D
+P 1500 2750
+F 0 "#FLG?" H 1500 2845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 2930 50  0000 C CNN
+F 2 "" H 1500 2750 50  0000 C CNN
+F 3 "" H 1500 2750 50  0000 C CNN
+	1    1500 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 57160716
+P 800 4050
+F 0 "#PWR?" H 800 3900 50  0001 C CNN
+F 1 "+3V3" H 800 4190 50  0000 C CNN
+F 2 "" H 800 4050 50  0000 C CNN
+F 3 "" H 800 4050 50  0000 C CNN
+	1    800  4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57160746
+P 800 4900
+F 0 "C?" H 825 5000 50  0000 L CNN
+F 1 "100nF" H 825 4800 50  0000 L CNN
+F 2 "" H 838 4750 50  0000 C CNN
+F 3 "" H 800 4900 50  0000 C CNN
+	1    800  4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57160787
+P 1150 4850
+F 0 "R?" V 1230 4850 50  0000 C CNN
+F 1 "10M" V 1150 4850 50  0000 C CNN
+F 2 "" V 1080 4850 50  0000 C CNN
+F 3 "" H 1150 4850 50  0000 C CNN
+	1    1150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 571607C0
+P 1150 5700
+F 0 "R?" V 1230 5700 50  0000 C CNN
+F 1 "1.54M" V 1150 5700 50  0000 C CNN
+F 2 "" V 1080 5700 50  0000 C CNN
+F 3 "" H 1150 5700 50  0000 C CNN
+	1    1150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5716080A
+P 1400 5700
+F 0 "C?" H 1425 5800 50  0000 L CNN
+F 1 "100nF" H 1425 5600 50  0000 L CNN
+F 2 "" H 1438 5550 50  0000 C CNN
+F 3 "" H 1400 5700 50  0000 C CNN
+	1    1400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_EBC Q?
+U 1 1 57160848
+P 1650 5450
+F 0 "Q?" H 1950 5500 50  0000 R CNN
+F 1 "2N3904" H 2150 5400 50  0000 R CNN
+F 2 "" H 1850 5550 50  0000 C CNN
+F 3 "" H 1650 5450 50  0000 C CNN
+	1    1650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57160B82
+P 1750 4850
+F 0 "R?" V 1830 4850 50  0000 C CNN
+F 1 "10M" V 1750 4850 50  0000 C CNN
+F 2 "" V 1680 4850 50  0000 C CNN
+F 3 "" H 1750 4850 50  0000 C CNN
+	1    1750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57160DE2
+P 2300 5700
+F 0 "C?" H 2325 5800 50  0000 L CNN
+F 1 "100nF" H 2325 5600 50  0000 L CNN
+F 2 "" H 2338 5550 50  0000 C CNN
+F 3 "" H 2300 5700 50  0000 C CNN
+	1    2300 5700
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57161174
+P 800 6050
+F 0 "#PWR?" H 800 5800 50  0001 C CNN
+F 1 "GND" H 800 5900 50  0000 C CNN
+F 2 "" H 800 6050 50  0000 C CNN
+F 3 "" H 800 6050 50  0000 C CNN
+	1    800  6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PNP_EBC Q?
+U 1 1 57161223
+P 2400 4800
+F 0 "Q?" H 2700 4850 50  0000 R CNN
+F 1 "2N3906" H 2900 4750 50  0000 R CNN
+F 2 "" H 2600 4900 50  0000 C CNN
+F 3 "" H 2400 4800 50  0000 C CNN
+	1    2400 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 57161661
+P 2300 4350
+F 0 "R?" V 2380 4350 50  0000 C CNN
+F 1 "3.3M" V 2300 4350 50  0000 C CNN
+F 2 "" V 2230 4350 50  0000 C CNN
+F 3 "" H 2300 4350 50  0000 C CNN
+	1    2300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57161A2B
+P 3450 4350
+F 0 "R?" V 3530 4350 50  0000 C CNN
+F 1 "47K" V 3450 4350 50  0000 C CNN
+F 2 "" V 3380 4350 50  0000 C CNN
+F 3 "" H 3450 4350 50  0000 C CNN
+	1    3450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_EBC Q?
+U 1 1 5716219F
+P 2600 5200
+F 0 "Q?" H 2900 5250 50  0000 R CNN
+F 1 "2N3904" H 3100 5150 50  0000 R CNN
+F 2 "" H 2800 5300 50  0000 C CNN
+F 3 "" H 2600 5200 50  0000 C CNN
+	1    2600 5200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3750 4800 2    60   Output ~ 0
+~RESET
+$Comp
+L SW_PUSH SW?
+U 1 1 57162CF6
+P 3450 5250
+F 0 "SW?" H 3600 5360 50  0000 C CNN
+F 1 "~RESET" H 3450 5170 50  0000 C CNN
+F 2 "" H 3450 5250 50  0000 C CNN
+F 3 "" H 3450 5250 50  0000 C CNN
+	1    3450 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57162CFD
+P 3450 5800
+F 0 "#PWR?" H 3450 5550 50  0001 C CNN
+F 1 "GND" H 3450 5600 50  0000 C CNN
+F 2 "" H 3450 5800 50  0000 C CNN
+F 3 "" H 3450 5800 50  0000 C CNN
+	1    3450 5800
+	1    0    0    -1  
+$EndComp
+Text Notes 1150 6300 0    60   ~ 0
+BOD = 3.0V, +/- 0.3V Hysterysis\nThis should turn off around 3.3V battery,\nwhich is near end of life.
+Text Notes 1100 3950 0    60   ~ 0
+Low Power BOD Circuit (0.5uA)\nFrom Atmel App Note \nAVR180: External Brown Out Protection
+Text HLabel 5750 3600 0    60   Input ~ 0
+BLE_PWR_EN
+Text Notes 950  7050 0    60   ~ 0
+Recommended Tolerances:\nBJTs - Ice >= 2.5mA, Vce >= 8V, Beta/Hfe >= 100\nR1/R2 divider - 1%\nOther Rs, 20%\nCs - < 20%, Z5U dielectric or better
+Text Notes 1400 750  0    60   ~ 0
+LiPo Battery Charger\nMCP73831-2ACI/OT
+Text Notes 10600 1450 2    60   ~ 0
+Can use either Battery or USB\n for primary power.\nPrevent battery voltage from \n passing to ext. 5V pin or \n to the charger input.
+$Comp
+L MIC9406X U?
+U 1 1 571AFE5B
+P 6600 3600
+F 0 "U?" H 6600 3350 50  0000 C CNN
+F 1 "MIC9406X" H 6600 3850 50  0000 C CNN
+F 2 "" H 6600 3500 50  0000 C CNN
+F 3 "" H 6600 3500 50  0000 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 571B007E
+P 6050 3800
+F 0 "#PWR?" H 6050 3550 50  0001 C CNN
+F 1 "GND" H 6050 3650 50  0000 C CNN
+F 2 "" H 6050 3800 50  0000 C CNN
+F 3 "" H 6050 3800 50  0000 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 571B0180
+P 7150 3800
+F 0 "#PWR?" H 7150 3550 50  0001 C CNN
+F 1 "GND" H 7150 3650 50  0000 C CNN
+F 2 "" H 7150 3800 50  0000 C CNN
+F 3 "" H 7150 3800 50  0000 C CNN
+	1    7150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 571B0280
+P 7150 3400
+F 0 "#PWR?" H 7150 3250 50  0001 C CNN
+F 1 "VCC" H 7150 3550 50  0000 C CNN
+F 2 "" H 7150 3400 50  0000 C CNN
+F 3 "" H 7150 3400 50  0000 C CNN
+	1    7150 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 6150 1250 0    60   ~ 0
+Jumper not installed.\nTODO:  Should be a solder pad.\nAvailable option to run MCU\ndirect from battery\nif LDO not installed.
+$Comp
+L R R?
+U 1 1 57B27515
+P 8500 5250
+F 0 "R?" V 8580 5250 50  0000 C CNN
+F 1 "1M" V 8500 5250 50  0000 C CNN
+F 2 "" V 8430 5250 50  0000 C CNN
+F 3 "" H 8500 5250 50  0000 C CNN
+	1    8500 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 57B275B3
+P 9200 5300
+F 0 "R?" V 9280 5300 50  0000 C CNN
+F 1 "100K" V 9200 5300 50  0000 C CNN
+F 2 "" V 9130 5300 50  0000 C CNN
+F 3 "" H 9200 5300 50  0000 C CNN
+	1    9200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57B27860
+P 9200 5850
+F 0 "R?" V 9280 5850 50  0000 C CNN
+F 1 "365K" V 9200 5850 50  0000 C CNN
+F 2 "" V 9130 5850 50  0000 C CNN
+F 3 "" H 9200 5850 50  0000 C CNN
+	1    9200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57B27C3A
+P 9200 6200
+F 0 "#PWR?" H 9200 5950 50  0001 C CNN
+F 1 "GND" H 9200 6050 50  0000 C CNN
+F 2 "" H 9200 6200 50  0000 C CNN
+F 3 "" H 9200 6200 50  0000 C CNN
+	1    9200 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_DGS Q?
+U 1 1 57B28507
+P 8400 5800
+F 0 "Q?" H 8700 5850 50  0000 R CNN
+F 1 "Q_NMOS_DGS" H 9050 5750 50  0000 R CNN
+F 2 "" H 8600 5900 50  0000 C CNN
+F 3 "" H 8400 5800 50  0000 C CNN
+	1    8400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_DGS Q?
+U 1 1 57B288C7
+P 8850 5100
+F 0 "Q?" V 9100 5250 50  0000 R CNN
+F 1 "Q_PMOS_DGS" V 9100 5050 50  0000 R CNN
+F 2 "" H 9050 5200 50  0000 C CNN
+F 3 "" H 8850 5100 50  0000 C CNN
+	1    8850 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 57B2908E
+P 8500 4800
+F 0 "#PWR?" H 8500 4650 50  0001 C CNN
+F 1 "+BATT" H 8500 4940 50  0000 C CNN
+F 2 "" H 8500 4800 50  0000 C CNN
+F 3 "" H 8500 4800 50  0000 C CNN
+	1    8500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57B2937E
+P 9550 5850
+F 0 "C?" H 9575 5950 50  0000 L CNN
+F 1 "100nF" H 9575 5750 50  0000 L CNN
+F 2 "" H 9588 5700 50  0000 C CNN
+F 3 "" H 9550 5850 50  0000 C CNN
+	1    9550 5850
+	1    0    0    -1  
+$EndComp
+Text HLabel 7650 5800 0    60   Input ~ 0
+VBAT_SENSE_EN
+Text HLabel 9900 5600 2    60   Output ~ 0
+VBAT_SENSE
+Text Notes 4850 6400 0    60   ~ 0
+Battery Voltage Divider\n\nBest for regulated 3.3V VCC reference,\n and best accuracy / widest range overall:\nR1 = 100K, R2 = 365K\nVBAT 4.2 (max) --> Sense 3.3\nVBAT 3.4 (min) --> Sense 2.69\n\nBest for using internal 2.56V band gap\n reference, but will work for both:\nR1 = 100K, R2 = 154K\nVBAT 4.2 (max) --> Sense 2.54\nVBAT 3.4 (min) --> Sense 2.06\n\nNOTE: due to internal band gap reference\n tolerance, using internal reference may\n introduce as much as 7% error.  Due to\n this and the narrower sense range, \n VCC reference is preferred for the monitor.
+Text Notes 10550 4700 2    60   ~ 0
+OR.... could just use another MIC9406x
+Text Notes 3150 750  0    60   ~ 0
+TODO: JST LiPo \nBattery Connector
+$Comp
+L Jumper_NO_Small JP?
+U 1 1 58654540
+P 6600 1400
+F 0 "JP?" H 6600 1480 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6610 1340 50  0001 C CNN
+F 2 "" H 6600 1400 50  0000 C CNN
+F 3 "" H 6600 1400 50  0000 C CNN
+	1    6600 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 2800 0    60   ~ 0
+Bulk Cap for\ncommon rail\nRate for >= 10V\nX5R/X7R Ceramic
+Wire Wire Line
+	9550 6100 9550 6000
+Connection ~ 9550 5600
+Wire Wire Line
+	9550 5700 9550 5600
+Connection ~ 8500 5000
+Wire Wire Line
+	8500 4800 8500 5000
+Wire Wire Line
+	8500 5000 8500 5100
+Wire Wire Line
+	8650 5000 8500 5000
+Connection ~ 8500 5500
+Wire Wire Line
+	8850 5500 8500 5500
+Wire Wire Line
+	8850 5300 8850 5500
+Wire Wire Line
+	8500 5400 8500 5500
+Wire Wire Line
+	8500 5500 8500 5600
+Wire Wire Line
+	9200 5000 9050 5000
+Wire Wire Line
+	8200 5800 7650 5800
+Wire Wire Line
+	8500 6100 8500 6000
+Connection ~ 9200 5600
+Wire Wire Line
+	9200 5600 9550 5600
+Wire Wire Line
+	9550 5600 9900 5600
+Connection ~ 9200 6100
+Wire Wire Line
+	8500 6100 9200 6100
+Wire Wire Line
+	9200 6100 9550 6100
+Wire Wire Line
+	9200 6000 9200 6100
+Wire Wire Line
+	9200 6100 9200 6200
+Wire Wire Line
+	9200 5450 9200 5600
+Wire Wire Line
+	9200 5600 9200 5700
+Wire Wire Line
+	9200 5000 9200 5150
+Wire Wire Line
+	5750 3600 6150 3600
+Wire Wire Line
+	7150 3500 7050 3500
+Wire Wire Line
+	7150 3400 7150 3500
+Wire Wire Line
+	7150 3700 7150 3800
+Wire Wire Line
+	7050 3700 7150 3700
+Wire Wire Line
+	6050 3700 6050 3800
+Wire Wire Line
+	6150 3700 6050 3700
+Wire Wire Line
+	5850 3500 6150 3500
+Wire Wire Line
+	5850 1300 5850 1400
+Wire Wire Line
+	5850 1400 5850 1750
+Wire Wire Line
+	5850 1750 5850 3500
+Wire Wire Line
+	3450 5800 3450 5550
+Connection ~ 3450 4800
+Wire Wire Line
+	3450 4500 3450 4800
+Wire Wire Line
+	3450 4800 3450 4950
+Wire Wire Line
+	3450 4100 3450 4200
+Connection ~ 1150 4100
+Wire Wire Line
+	1150 4700 1150 4100
+Connection ~ 800  4100
+Wire Wire Line
+	800  4050 800  4100
+Wire Wire Line
+	800  4100 800  4750
+Connection ~ 2300 4100
+Wire Wire Line
+	2300 4100 2300 4200
+Wire Wire Line
+	800  4100 1150 4100
+Wire Wire Line
+	1150 4100 2300 4100
+Wire Wire Line
+	2300 4100 3450 4100
+Connection ~ 2700 4800
+Wire Wire Line
+	2700 4800 2700 5000
+Wire Wire Line
+	2600 4800 2700 4800
+Wire Wire Line
+	2700 4800 3450 4800
+Wire Wire Line
+	3450 4800 3750 4800
+Connection ~ 2300 4550
+Wire Wire Line
+	1750 4550 2300 4550
+Wire Wire Line
+	2300 4500 2300 4550
+Wire Wire Line
+	2300 4550 2300 4600
+Connection ~ 2300 5200
+Wire Wire Line
+	2300 5000 2300 5200
+Wire Wire Line
+	2300 5200 2300 5550
+Wire Wire Line
+	1750 4700 1750 4550
+Connection ~ 800  5950
+Connection ~ 1150 5950
+Wire Wire Line
+	800  5050 800  5950
+Wire Wire Line
+	800  5950 800  6050
+Connection ~ 2300 5950
+Wire Wire Line
+	2700 5950 2700 5400
+Connection ~ 1750 5950
+Wire Wire Line
+	2300 5950 2300 5850
+Connection ~ 1750 5200
+Wire Wire Line
+	1750 5200 2300 5200
+Wire Wire Line
+	2300 5200 2400 5200
+Wire Wire Line
+	1750 5000 1750 5200
+Wire Wire Line
+	1750 5200 1750 5250
+Connection ~ 1150 5450
+Connection ~ 1400 5950
+Wire Wire Line
+	1750 5950 1750 5650
+Wire Wire Line
+	1400 5950 1400 5850
+Wire Wire Line
+	800  5950 1150 5950
+Wire Wire Line
+	1150 5950 1400 5950
+Wire Wire Line
+	1400 5950 1750 5950
+Wire Wire Line
+	1750 5950 2300 5950
+Wire Wire Line
+	2300 5950 2700 5950
+Wire Wire Line
+	1150 5850 1150 5950
+Connection ~ 1400 5450
+Wire Wire Line
+	1150 5000 1150 5450
+Wire Wire Line
+	1150 5450 1150 5550
+Wire Wire Line
+	1400 5450 1400 5550
+Wire Wire Line
+	1150 5450 1400 5450
+Wire Wire Line
+	1400 5450 1450 5450
+Wire Wire Line
+	1350 1300 1350 1400
+Connection ~ 1100 1100
+Wire Wire Line
+	1100 1200 1100 1100
+Connection ~ 700  1100
+Wire Wire Line
+	700  1000 700  1100
+Wire Wire Line
+	700  1100 700  1250
+Wire Wire Line
+	700  1100 1100 1100
+Wire Wire Line
+	1100 1100 1450 1100
+Wire Wire Line
+	700  1550 700  1650
+Wire Wire Line
+	1350 1800 1350 1700
+Wire Wire Line
+	1100 1800 1350 1800
+Wire Wire Line
+	1100 1600 1100 1800
+Wire Wire Line
+	1350 1300 1450 1300
+Connection ~ 2350 1650
+Wire Wire Line
+	2550 1650 2350 1650
+Wire Wire Line
+	2550 1600 2550 1650
+Connection ~ 2800 1100
+Wire Wire Line
+	2800 1600 2800 1700
+Wire Wire Line
+	2800 1000 2800 1100
+Wire Wire Line
+	2800 1100 2800 1300
+Wire Wire Line
+	2350 1100 2800 1100
+Wire Wire Line
+	2350 1300 2350 1650
+Wire Wire Line
+	2350 1650 2350 1700
+Wire Wire Line
+	2550 1200 2550 1300
+Wire Wire Line
+	2350 1200 2550 1200
+Connection ~ 3200 1100
+Wire Wire Line
+	3300 1100 3200 1100
+Wire Wire Line
+	3200 1000 3200 1100
+Wire Wire Line
+	3200 1100 3200 1200
+Wire Wire Line
+	3200 1200 3300 1200
+Connection ~ 3200 1400
+Wire Wire Line
+	3300 1400 3200 1400
+Wire Wire Line
+	3200 1300 3200 1400
+Wire Wire Line
+	3200 1400 3200 1500
+Wire Wire Line
+	3300 1300 3200 1300
+Connection ~ 7250 1750
+Wire Wire Line
+	7250 2200 7250 2300
+Wire Wire Line
+	7250 1300 7250 1400
+Wire Wire Line
+	7250 1400 7250 1750
+Wire Wire Line
+	7250 1750 7250 1900
+Connection ~ 6050 1750
+Wire Wire Line
+	6700 1400 7250 1400
+Connection ~ 7250 1400
+Wire Wire Line
+	7050 1750 7250 1750
+Wire Wire Line
+	6500 1400 5850 1400
+Connection ~ 5850 1400
+Wire Wire Line
+	6150 1850 6050 1850
+Connection ~ 6050 1850
+$Comp
+L GND #PWR?
+U 1 1 58658D37
+P 6050 2300
+F 0 "#PWR?" H 6050 2050 50  0001 C CNN
+F 1 "GND" H 6050 2150 50  0000 C CNN
+F 2 "" H 6050 2300 50  0000 C CNN
+F 3 "" H 6050 2300 50  0000 C CNN
+	1    6050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1950 6050 1950
+Wire Wire Line
+	6050 1950 6050 2300
+Wire Wire Line
+	6050 1850 6050 1750
+$Comp
+L MIC5225 U?
+U 1 1 5715E81A
+P 6600 1850
+F 0 "U?" H 6600 1600 50  0000 C CNN
+F 1 "MIC5225" H 6600 2100 50  0000 C CNN
+F 2 "" H 6600 1750 50  0000 C CNN
+F 3 "" H 6600 1750 50  0000 C CNN
+	1    6600 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 1750
+Text Notes 7500 3200 0    60   ~ 0
+NOTE:  This power topology\n  will not work with BF LE UART Friend\n  due to diode ORing on VIN.  The double \n  diode drop from the battery to the BF UART Friend's \n  LDO in this ciruit will be too low as the battery drains.\n  Either:\n  - use the BF LE SPI Friend, which doesn't have the VIN diode\n  - Modify your BF LE UART Friend to remove and jumper the VIN diode
+Text Notes 2650 2500 2    60   ~ 0
+Diode ORd\nBATT/USB
+Text Notes 6400 2250 0    60   ~ 0
+MCU LDO
+Wire Notes Line
+	4550 500  4550 7750
+Wire Notes Line
+	4550 4200 11200 4200
+Wire Notes Line
+	500  3400 4550 3400
+Wire Notes Line
+	500  2100 4550 2100
+Text Notes 7250 650  0    60   ~ 0
+MCU and BLE Power Generation & Control
+Text Notes 9400 6250 0    60   ~ 0
+Use 1% resistors & low ESR cap
+Text Notes 7050 4400 0    60   ~ 0
+Battery Voltage Monitor (ADC input)
+Text Notes 1600 3250 0    60   ~ 0
+Power Rail Descriptions
+$Comp
+L SPST SW?
+U 1 1 58668083
+P 10150 2200
+F 0 "SW?" H 10150 2300 50  0000 C CNN
+F 1 "ON/OFF" H 10150 2100 50  0000 C CNN
+F 2 "" H 10150 2200 50  0000 C CNN
+F 3 "" H 10150 2200 50  0000 C CNN
+	1    10150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 58668538
+P 9650 1750
+F 0 "#PWR?" H 9650 1600 50  0001 C CNN
+F 1 "+5V" H 9650 1900 50  0000 C CNN
+F 2 "" H 9650 1750 50  0000 C CNN
+F 3 "" H 9650 1750 50  0000 C CNN
+	1    9650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5866853E
+P 9350 1750
+F 0 "#PWR?" H 9350 1600 50  0001 C CNN
+F 1 "+BATT" H 9350 1900 50  0000 C CNN
+F 2 "" H 9350 1750 50  0000 C CNN
+F 3 "" H 9350 1750 50  0000 C CNN
+	1    9350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 58668544
+P 9350 1950
+F 0 "D?" H 9350 2050 50  0000 C CNN
+F 1 "MBR120" H 9350 1850 50  0000 C CNN
+F 2 "" H 9350 1950 50  0000 C CNN
+F 3 "" H 9350 1950 50  0000 C CNN
+	1    9350 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 2200 9650 2200
+Connection ~ 9650 2200
+Wire Wire Line
+	9350 1750 9350 1800
+$Comp
+L D_Schottky D?
+U 1 1 5866855E
+P 9650 1950
+F 0 "D?" H 9650 2050 50  0000 C CNN
+F 1 "MBR120" H 9650 1850 50  0000 C CNN
+F 2 "" H 9650 1950 50  0000 C CNN
+F 3 "" H 9650 1950 50  0000 C CNN
+	1    9650 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 1750 9650 1800
+Wire Wire Line
+	9650 2200 9650 2100
+$Comp
+L VCOM #PWR?
+U 1 1 5866865E
+P 10650 1750
+F 0 "#PWR?" H 10650 1600 50  0001 C CNN
+F 1 "VCOM" H 10650 1900 50  0000 C CNN
+F 2 "" H 10650 1750 50  0000 C CNN
+F 3 "" H 10650 1750 50  0000 C CNN
+	1    10650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2100 9350 2200
+Wire Wire Line
+	5550 1750 5850 1750
+Wire Wire Line
+	5850 1750 6050 1750
+Wire Wire Line
+	6050 1750 6150 1750
+Text Notes 9950 2000 0    60   ~ 0
+picoPOKER\nMain\nON / OFF \nSwitch
+$Comp
+L C C?
+U 1 1 5866A536
+P 5550 2050
+F 0 "C?" H 5575 2150 50  0000 L CNN
+F 1 "10uF" H 5575 1950 50  0000 L CNN
+F 2 "" H 5588 1900 50  0000 C CNN
+F 3 "" H 5550 2050 50  0000 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5866A53C
+P 5550 2300
+F 0 "#PWR?" H 5550 2050 50  0001 C CNN
+F 1 "GND" H 5550 2150 50  0000 C CNN
+F 2 "" H 5550 2300 50  0000 C CNN
+F 3 "" H 5550 2300 50  0000 C CNN
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1750 5550 1900
+Wire Wire Line
+	5550 2200 5550 2300
+Wire Wire Line
+	10650 1750 10650 2200
+$EndSCHEMATC

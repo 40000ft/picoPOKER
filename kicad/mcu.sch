@@ -1,0 +1,820 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:picoPOKER-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "picoPOKER Keyboard"
+Date "2000-12-31"
+Rev "-"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AT90USB1286-AU U?
+U 1 1 570C4CD0
+P 5350 2800
+F 0 "U?" H 5350 4100 60  0000 C CNN
+F 1 "AT90USB1286-AU" H 5250 -300 60  0000 C CNN
+F 2 "" H 7300 2500 60  0000 C CNN
+F 3 "" H 7300 2500 60  0000 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 570C4D41
+P 3950 5750
+F 0 "#PWR?" H 3950 5500 50  0001 C CNN
+F 1 "GND" H 3950 5600 50  0000 C CNN
+F 2 "" H 3950 5750 50  0000 C CNN
+F 3 "" H 3950 5750 50  0000 C CNN
+	1    3950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P?
+U 1 1 570C4DF0
+P 1200 2700
+F 0 "P?" H 1525 2575 50  0000 C CNN
+F 1 "USB_OTG" H 1200 2900 50  0000 C CNN
+F 2 "" V 1150 2600 50  0000 C CNN
+F 3 "" V 1150 2600 50  0000 C CNN
+	1    1200 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 570C4ECF
+P 3600 2600
+F 0 "R?" V 3500 2600 50  0000 C CNN
+F 1 "22" V 3600 2600 50  0000 C CNN
+F 2 "" V 3530 2600 50  0000 C CNN
+F 3 "" H 3600 2600 50  0000 C CNN
+	1    3600 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 570C4F32
+P 3600 2700
+F 0 "R?" V 3700 2700 50  0000 C CNN
+F 1 "22" V 3600 2700 50  0000 C CNN
+F 2 "" V 3530 2700 50  0000 C CNN
+F 3 "" H 3600 2700 50  0000 C CNN
+	1    3600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 570C5030
+P 1600 2900
+F 0 "#PWR?" H 1600 2650 50  0001 C CNN
+F 1 "GND" H 1600 2750 50  0000 C CNN
+F 2 "" H 1600 2900 50  0000 C CNN
+F 3 "" H 1600 2900 50  0000 C CNN
+	1    1600 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 2800
+NoConn ~ 4050 2800
+$Comp
+L C C?
+U 1 1 570C6F6F
+P 2900 2000
+F 0 "C?" V 3000 2100 50  0000 L CNN
+F 1 "1uF" V 3000 1800 50  0000 L CNN
+F 2 "" H 2938 1850 50  0000 C CNN
+F 3 "" H 2900 2000 50  0000 C CNN
+	1    2900 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 570C7168
+P 2550 2000
+F 0 "#PWR?" H 2550 1750 50  0001 C CNN
+F 1 "GND" V 2550 1800 50  0000 C CNN
+F 2 "" H 2550 2000 50  0000 C CNN
+F 3 "" H 2550 2000 50  0000 C CNN
+	1    2550 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Crystal Y?
+U 1 1 570C73E2
+P 1650 3950
+F 0 "Y?" H 1650 4100 50  0000 C CNN
+F 1 "8MHz" H 1650 3800 50  0000 C CNN
+F 2 "" H 1650 3950 50  0000 C CNN
+F 3 "" H 1650 3950 50  0000 C CNN
+	1    1650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 570C75A0
+P 1650 4650
+F 0 "#PWR?" H 1650 4400 50  0001 C CNN
+F 1 "GND" H 1650 4500 50  0000 C CNN
+F 2 "" H 1650 4650 50  0000 C CNN
+F 3 "" H 1650 4650 50  0000 C CNN
+	1    1650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 570C7C3E
+P 1350 4200
+F 0 "C?" H 1375 4300 50  0000 L CNN
+F 1 "12pF" H 1375 4100 50  0000 L CNN
+F 2 "" H 1388 4050 50  0000 C CNN
+F 3 "" H 1350 4200 50  0000 C CNN
+	1    1350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 570C7C75
+P 1950 4200
+F 0 "C?" H 1975 4300 50  0000 L CNN
+F 1 "12pF" H 1975 4100 50  0000 L CNN
+F 2 "" H 1988 4050 50  0000 C CNN
+F 3 "" H 1950 4200 50  0000 C CNN
+	1    1950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 570C7ECD
+P 1100 3200
+F 0 "#PWR?" H 1100 2950 50  0001 C CNN
+F 1 "GND" H 1100 3050 50  0000 C CNN
+F 2 "" H 1100 3200 50  0000 C CNN
+F 3 "" H 1100 3200 50  0000 C CNN
+	1    1100 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 4000
+NoConn ~ 4050 4100
+Text Label 2950 4700 0    60   ~ 0
+BLE_MOSI_RXI
+Text Label 2950 4600 0    60   ~ 0
+BLE_MISO_TXO
+Text Label 2950 4900 0    60   ~ 0
+BLE_SCK
+Text HLabel 2900 4400 0    60   BiDi ~ 0
+~KEY_INT
+Text Label 2950 4500 0    60   ~ 0
+BLE_IRQ_~RTS
+Text Label 2950 4800 0    60   ~ 0
+BLE_~CS~_~CTS
+$Comp
+L GND #PWR?
+U 1 1 570C87FB
+P 7300 3700
+F 0 "#PWR?" H 7300 3450 50  0001 C CNN
+F 1 "GND" V 7300 3500 50  0000 C CNN
+F 2 "" H 7300 3700 50  0000 C CNN
+F 3 "" H 7300 3700 50  0000 C CNN
+	1    7300 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 570C882A
+P 7000 3700
+F 0 "R?" V 7080 3700 50  0000 C CNN
+F 1 "10k" V 7000 3700 50  0000 C CNN
+F 2 "" V 6930 3700 50  0000 C CNN
+F 3 "" H 7000 3700 50  0000 C CNN
+	1    7000 3700
+	0    1    -1   0   
+$EndComp
+$Comp
+L CONN_01X09 P?
+U 1 1 570C8996
+P 2600 7000
+F 0 "P?" H 2600 7500 50  0000 C CNN
+F 1 "CONN_01X09" V 2700 7000 50  0000 C CNN
+F 2 "" H 2600 7000 50  0000 C CNN
+F 3 "" H 2600 7000 50  0000 C CNN
+	1    2600 7000
+	1    0    0    -1  
+$EndComp
+Text Notes 2850 7400 0    60   ~ 0
+BF BLE SPI Friend \n@ <= 4 MHz\n1 - SCK\n2 - MISO\n3 - MOSI\n4 - ~CS\n5 - IRQ\n6 - ~DFU\n7 - ~RESET\n8 - GND\n9 - VIN
+Text Label 1600 6600 0    60   ~ 0
+BLE_SCK
+Text Label 1600 6700 0    60   ~ 0
+BLE_MISO_TXO
+Text Label 1600 6800 0    60   ~ 0
+BLE_MOSI_RXI
+Text Label 1600 6900 0    60   ~ 0
+BLE_~CS~_~CTS
+Text Label 1600 7000 0    60   ~ 0
+BLE_IRQ_~RTS
+NoConn ~ 2400 7200
+Text Label 6600 3700 0    60   ~ 0
+~HWB
+$Comp
+L CONN_01X08 P?
+U 1 1 570C8E75
+P 4750 7050
+F 0 "P?" H 4750 7500 50  0000 C CNN
+F 1 "CONN_01X08" V 4850 7050 50  0000 C CNN
+F 2 "" H 4750 7050 50  0000 C CNN
+F 3 "" H 4750 7050 50  0000 C CNN
+	1    4750 7050
+	1    0    0    -1  
+$EndComp
+Text Notes 5000 7400 0    60   ~ 0
+BF BLE UART Friend\n@ 9600 Baud\n1 - MODE \n2 - ~CTS\n3 - TXO\n4 - RXI\n5 - VIN\n6 - ~RTS\n7 - GND\n8 - ~DFU
+NoConn ~ 4550 6700
+Text Label 3700 6800 0    60   ~ 0
+BLE_~CS~_~CTS
+Text Label 3700 6900 0    60   ~ 0
+BLE_MISO_TXO
+Text Label 3700 7000 0    60   ~ 0
+BLE_MOSI_RXI
+Text Label 3700 7200 0    60   ~ 0
+BLE_IRQ_~RTS
+$Comp
+L GND #PWR?
+U 1 1 570C92FE
+P 3650 7300
+F 0 "#PWR?" H 3650 7050 50  0001 C CNN
+F 1 "GND" V 3650 7100 50  0000 C CNN
+F 2 "" H 3650 7300 50  0000 C CNN
+F 3 "" H 3650 7300 50  0000 C CNN
+	1    3650 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 570C912C
+P 1950 7300
+F 0 "#PWR?" H 1950 7050 50  0001 C CNN
+F 1 "GND" V 1950 7100 50  0000 C CNN
+F 2 "" H 1950 7300 50  0000 C CNN
+F 3 "" H 1950 7300 50  0000 C CNN
+	1    1950 7300
+	0    1    1    0   
+$EndComp
+Entry Wire Line
+	7200 5000 7300 5100
+Entry Wire Line
+	7200 5100 7300 5200
+Entry Wire Line
+	7200 5200 7300 5300
+Entry Wire Line
+	7200 5300 7300 5400
+Entry Wire Line
+	7200 5400 7300 5500
+Text HLabel 8900 5650 2    60   Output ~ 0
+KEY_ROWS
+Text Label 6650 5000 0    60   ~ 0
+ROW0
+Text Label 6650 5100 0    60   ~ 0
+ROW1
+Text Label 6650 5200 0    60   ~ 0
+ROW2
+Text Label 6650 5300 0    60   ~ 0
+ROW3
+Text Label 6650 5400 0    60   ~ 0
+ROW4
+Text Notes 4600 6300 2    60   ~ 0
+Bluetooth Low Engery (BLE) Headers\n- Adafruit Bluefruit SPI/UART Friend
+$Comp
+L R R?
+U 1 1 570F2428
+P 3850 4900
+F 0 "R?" V 3900 4700 50  0000 C CNN
+F 1 "22" V 3850 4900 50  0000 C CNN
+F 2 "" V 3780 4900 50  0000 C CNN
+F 3 "" H 3850 4900 50  0000 C CNN
+	1    3850 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 570F2554
+P 3850 4700
+F 0 "R?" V 3900 4500 50  0000 C CNN
+F 1 "22" V 3850 4700 50  0000 C CNN
+F 2 "" V 3780 4700 50  0000 C CNN
+F 3 "" H 3850 4700 50  0000 C CNN
+	1    3850 4700
+	0    1    1    0   
+$EndComp
+NoConn ~ 6550 3900
+NoConn ~ 6550 3800
+Entry Wire Line
+	7800 4100 7900 4200
+Entry Wire Line
+	7800 4200 7900 4300
+Entry Wire Line
+	7800 4300 7900 4400
+Entry Wire Line
+	7800 4400 7900 4500
+Entry Wire Line
+	7800 4500 7900 4600
+Entry Wire Line
+	7800 4600 7900 4700
+Entry Wire Line
+	7800 4700 7900 4800
+Entry Wire Line
+	7800 4800 7900 4900
+Text HLabel 8900 5100 2    60   BiDi ~ 0
+KEY_COLS
+$Comp
+L +5V #PWR?
+U 1 1 57114915
+P 1750 2500
+F 0 "#PWR?" H 1750 2350 50  0001 C CNN
+F 1 "+5V" H 1750 2640 50  0000 C CNN
+F 2 "" H 1750 2500 50  0000 C CNN
+F 3 "" H 1750 2500 50  0000 C CNN
+	1    1750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5711495D
+P 3800 2300
+F 0 "#PWR?" H 3800 2150 50  0001 C CNN
+F 1 "+5V" V 3800 2550 50  0000 C CNN
+F 2 "" H 3800 2300 50  0000 C CNN
+F 3 "" H 3800 2300 50  0000 C CNN
+	1    3800 2300
+	0    -1   -1   0   
+$EndComp
+Text Label 8550 5650 2    60   ~ 0
+ROW[4:0]
+Text Label 8600 5100 2    60   ~ 0
+COL[14:0]
+Text Notes 3050 2550 2    60   ~ 0
+90 Ohm Diff Matched
+Text Label 6900 4100 2    60   ~ 0
+COL7
+Text Label 6900 4200 2    60   ~ 0
+COL6
+Text Label 6900 4300 2    60   ~ 0
+COL5
+Text Label 6900 4400 2    60   ~ 0
+COL4
+Text Label 6900 4500 2    60   ~ 0
+COL3
+Text Label 6900 4600 2    60   ~ 0
+COL2
+Text Label 6900 4700 2    60   ~ 0
+COL1
+Text Label 6900 4800 2    60   ~ 0
+COL0
+Entry Wire Line
+	7800 2800 7900 2900
+Entry Wire Line
+	7800 2900 7900 3000
+Entry Wire Line
+	7800 3000 7900 3100
+Entry Wire Line
+	7800 3100 7900 3200
+Entry Wire Line
+	7800 3200 7900 3300
+Entry Wire Line
+	7800 3300 7900 3400
+Entry Wire Line
+	7800 3400 7900 3500
+NoConn ~ 6550 3500
+Text Label 6950 3400 2    60   ~ 0
+COL14
+Text Label 6950 3300 2    60   ~ 0
+COL13
+Text Label 6950 3200 2    60   ~ 0
+COL12
+Text Label 6950 3100 2    60   ~ 0
+COL11
+Text Label 6950 3000 2    60   ~ 0
+COL10
+Text Label 6900 2900 2    60   ~ 0
+COL9
+Text Label 6900 2800 2    60   ~ 0
+COL8
+$Comp
+L VCC #PWR?
+U 1 1 5711CF3B
+P 1950 7400
+F 0 "#PWR?" H 1950 7250 50  0001 C CNN
+F 1 "VCC" V 1950 7600 50  0000 C CNN
+F 2 "" H 1950 7400 50  0000 C CNN
+F 3 "" H 1950 7400 50  0000 C CNN
+	1    1950 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 5711D2CE
+P 3650 7100
+F 0 "#PWR?" H 3650 6950 50  0001 C CNN
+F 1 "VCC" V 3650 7300 50  0000 C CNN
+F 2 "" H 3650 7100 50  0000 C CNN
+F 3 "" H 3650 7100 50  0000 C CNN
+	1    3650 7100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4050 3200
+Text Notes 3700 2500 0    60   ~ 0
++/-5%
+$Comp
+L C C?
+U 1 1 5712A007
+P 6800 1700
+F 0 "C?" V 6900 1800 50  0000 L CNN
+F 1 "1uF" V 6900 1500 50  0000 L CNN
+F 2 "" H 6838 1550 50  0000 C CNN
+F 3 "" H 6800 1700 50  0000 C CNN
+	1    6800 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5712A184
+P 7050 1700
+F 0 "#PWR?" H 7050 1450 50  0001 C CNN
+F 1 "GND" V 7050 1450 50  0000 C CNN
+F 2 "" H 7050 1700 50  0000 C CNN
+F 3 "" H 7050 1700 50  0000 C CNN
+	1    7050 1700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3950 5400 3950 5750
+Wire Wire Line
+	3950 5400 4050 5400
+Wire Wire Line
+	4050 5500 3950 5500
+Connection ~ 3950 5500
+Wire Wire Line
+	4050 5600 3950 5600
+Connection ~ 3950 5600
+Wire Wire Line
+	4050 5700 3950 5700
+Connection ~ 3950 5700
+Wire Wire Line
+	3050 2000 4050 2000
+Wire Wire Line
+	3950 1900 4050 1900
+Connection ~ 3950 1900
+Wire Wire Line
+	3950 1800 4050 1800
+Connection ~ 3950 1800
+Connection ~ 3950 1700
+Wire Wire Line
+	3750 2700 4050 2700
+Wire Wire Line
+	3750 2600 4050 2600
+Wire Wire Line
+	1500 2500 1750 2500
+Wire Wire Line
+	1500 2600 3450 2600
+Wire Wire Line
+	1500 2700 3450 2700
+Wire Wire Line
+	1500 2900 1600 2900
+Wire Wire Line
+	1100 3100 1100 3200
+Wire Wire Line
+	2550 2000 2750 2000
+Wire Wire Line
+	1350 4350 1350 4450
+Wire Wire Line
+	1350 4450 1950 4450
+Wire Wire Line
+	1950 4450 1950 4350
+Wire Wire Line
+	1650 4650 1650 4450
+Connection ~ 1650 4450
+Wire Wire Line
+	1350 3700 4050 3700
+Wire Wire Line
+	1350 3700 1350 4050
+Wire Wire Line
+	1350 3950 1500 3950
+Wire Wire Line
+	1800 3950 1950 3950
+Wire Wire Line
+	1950 3800 1950 4050
+Connection ~ 1350 3950
+Wire Wire Line
+	1950 3800 4050 3800
+Connection ~ 1950 3950
+Wire Wire Line
+	4050 4600 2950 4600
+Wire Wire Line
+	3700 4900 2950 4900
+Wire Wire Line
+	2900 4400 4050 4400
+Wire Wire Line
+	4050 4500 2950 4500
+Wire Wire Line
+	2950 4800 4050 4800
+Wire Wire Line
+	6550 3700 6850 3700
+Wire Wire Line
+	7150 3700 7300 3700
+Wire Wire Line
+	2400 6600 1600 6600
+Wire Wire Line
+	2400 6700 1600 6700
+Wire Wire Line
+	2400 6800 1600 6800
+Wire Wire Line
+	2400 6900 1600 6900
+Wire Wire Line
+	2400 7000 1600 7000
+Wire Wire Line
+	1950 7300 2400 7300
+Wire Wire Line
+	3650 7300 4550 7300
+Wire Wire Line
+	4550 6800 3700 6800
+Wire Wire Line
+	4550 6900 3700 6900
+Wire Wire Line
+	4550 7000 3700 7000
+Wire Wire Line
+	4550 7200 3700 7200
+Wire Wire Line
+	3550 5100 4050 5100
+Wire Wire Line
+	6550 5000 7200 5000
+Wire Wire Line
+	6550 5100 7200 5100
+Wire Wire Line
+	6550 5200 7200 5200
+Wire Wire Line
+	6550 5400 7200 5400
+Wire Wire Line
+	6550 5300 7200 5300
+Wire Bus Line
+	7300 5100 7300 5650
+Wire Bus Line
+	7300 5200 7300 5500
+Wire Bus Line
+	7300 5650 8900 5650
+Wire Wire Line
+	3700 4700 2950 4700
+Wire Wire Line
+	4000 4700 4050 4700
+Wire Wire Line
+	4000 4900 4050 4900
+Wire Wire Line
+	6550 4200 7800 4200
+Wire Wire Line
+	6550 4300 7800 4300
+Wire Wire Line
+	6550 4400 7800 4400
+Wire Wire Line
+	6550 4500 7800 4500
+Wire Wire Line
+	6550 4600 7800 4600
+Wire Wire Line
+	6550 4700 7800 4700
+Wire Wire Line
+	6550 4800 7800 4800
+Wire Wire Line
+	6550 4100 7800 4100
+Wire Bus Line
+	7900 5100 8900 5100
+Wire Bus Line
+	7900 2900 7900 5100
+Wire Wire Line
+	6550 2800 7800 2800
+Wire Wire Line
+	6550 2900 7800 2900
+Wire Wire Line
+	6550 3000 7800 3000
+Wire Wire Line
+	6550 3100 7800 3100
+Wire Wire Line
+	6550 3200 7800 3200
+Wire Wire Line
+	6550 3300 7800 3300
+Wire Wire Line
+	6550 3400 7800 3400
+Wire Wire Line
+	1950 7400 2400 7400
+Wire Wire Line
+	3650 7100 4550 7100
+Wire Notes Line
+	1450 6350 5950 6350
+Wire Notes Line
+	5950 6350 5950 7550
+Wire Notes Line
+	5950 7550 1450 7550
+Wire Notes Line
+	1450 7550 1450 6350
+Wire Wire Line
+	3950 1350 3950 1900
+Wire Wire Line
+	3250 1700 3350 1700
+Wire Wire Line
+	3550 1700 4050 1700
+Wire Wire Line
+	6550 1700 6650 1700
+Wire Wire Line
+	6950 1700 7050 1700
+Wire Wire Line
+	3250 1700 3250 2000
+Connection ~ 3250 2000
+$Comp
+L +3V3 #PWR?
+U 1 1 5711487F
+P 3950 1350
+F 0 "#PWR?" H 3950 1200 50  0001 C CNN
+F 1 "+3V3" H 3950 1490 50  0000 C CNN
+F 2 "" H 3950 1350 50  0000 C CNN
+F 3 "" H 3950 1350 50  0000 C CNN
+	1    3950 1350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3550 5100 0    60   Output ~ 0
+BLE_PWR_EN
+Wire Wire Line
+	3800 2300 4050 2300
+Text HLabel 3450 3500 0    60   Input ~ 0
+~RESET
+Wire Wire Line
+	3450 3500 4050 3500
+Text HLabel 7900 1900 2    60   Input ~ 0
+VBAT_SENSE
+Wire Wire Line
+	6550 1900 7900 1900
+Text HLabel 3400 3100 0    60   Output ~ 0
+VBAT_SENSE_EN
+Wire Wire Line
+	3400 3100 4050 3100
+$Comp
+L Jumper_NC_Small JP?
+U 1 1 57B2AF0D
+P 3450 1700
+F 0 "JP?" H 3450 1780 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3460 1640 50  0001 C CNN
+F 2 "" H 3450 1700 50  0000 C CNN
+F 3 "" H 3450 1700 50  0000 C CNN
+	1    3450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP?
+U 1 1 57B2AF56
+P 3900 2200
+F 0 "JP?" H 3900 2280 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3910 2140 50  0001 C CNN
+F 2 "" H 3900 2200 50  0000 C CNN
+F 3 "" H 3900 2200 50  0000 C CNN
+	1    3900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2200 4000 2200
+Wire Wire Line
+	3800 2200 3700 2200
+Wire Wire Line
+	3700 2200 3700 1700
+Connection ~ 3700 1700
+Text Notes 3050 1750 2    60   ~ 0
+TODO:  These should be solder\nbridges or zero-ohm resistors
+$Comp
+L C C?
+U 1 1 5865CE56
+P 2900 1400
+F 0 "C?" V 3000 1500 50  0000 L CNN
+F 1 "10uF" V 3000 1150 50  0000 L CNN
+F 2 "" H 2938 1250 50  0000 C CNN
+F 3 "" H 2900 1400 50  0000 C CNN
+	1    2900 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5865CEA6
+P 2550 1400
+F 0 "#PWR?" H 2550 1150 50  0001 C CNN
+F 1 "GND" V 2550 1200 50  0000 C CNN
+F 2 "" H 2550 1400 50  0000 C CNN
+F 3 "" H 2550 1400 50  0000 C CNN
+	1    2550 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 1400 2750 1400
+Wire Wire Line
+	3050 1400 3950 1400
+Wire Wire Line
+	4050 5000 2950 5000
+Text Label 2950 5000 0    60   ~ 0
+BLE_DFU
+Wire Wire Line
+	2400 7100 1600 7100
+Text Label 1600 7100 0    60   ~ 0
+BLE_DFU
+Wire Wire Line
+	4550 7400 3700 7400
+Text Label 3700 7400 0    60   ~ 0
+BLE_DFU
+Text Notes 4250 850  0    60   ~ 0
+VCC Mode
+Text Notes 4250 1100 0    60   ~ 0
+Regulated \n3.3V
+Text Notes 4200 1350 0    60   ~ 0
+Unregulated\nBattery / VUSB
+Text Notes 5000 850  0    60   ~ 0
+UCAP\nJumper
+Text Notes 5450 850  0    60   ~ 0
+UVCC\nJumper
+Text Notes 5000 1050 0    60   ~ 0
+VCC
+Text Notes 5450 1050 0    60   ~ 0
+Open
+Text Notes 5000 1300 0    60   ~ 0
+Open
+Text Notes 5450 1300 0    60   ~ 0
+VCC
+Text Notes 5900 850  0    60   ~ 0
+Comments
+Text Notes 5900 1050 0    60   ~ 0
+Internal regulator off.  Power USB from VCC.
+Text Notes 5900 1300 0    60   ~ 0
+Use internal USB regulator.
+Wire Notes Line
+	4200 650  4200 1350
+Wire Notes Line
+	4200 1350 8000 1350
+Wire Notes Line
+	8000 1350 8000 650 
+Wire Notes Line
+	8000 650  4200 650 
+Wire Notes Line
+	4200 900  8000 900 
+Wire Notes Line
+	4200 1150 8000 1150
+Wire Notes Line
+	4950 650  4950 1350
+Wire Notes Line
+	5350 650  5350 1350
+Wire Notes Line
+	5850 650  5850 1350
+Text Notes 4200 600  0    60   ~ 0
+NOTE:  To run with unregulated battery must also remove 3.3V LDO and install jumper
+Wire Wire Line
+	6550 5700 7000 5700
+Wire Wire Line
+	7000 5700 7000 5900
+Wire Wire Line
+	7000 5900 8900 5900
+Text HLabel 8900 5900 2    60   Output ~ 0
+CAPS_LED_EN
+NoConn ~ 6550 5600
+NoConn ~ 6550 5500
+NoConn ~ 6550 2000
+NoConn ~ 6550 2100
+NoConn ~ 6550 2200
+NoConn ~ 6550 2300
+NoConn ~ 6550 2400
+NoConn ~ 6550 2500
+NoConn ~ 6550 2600
+$EndSCHEMATC
