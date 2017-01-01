@@ -186,20 +186,20 @@ Essentially, the impact of this circuit can be disregarded due to the load-shed 
 
 ###Component Estimate Summary
 
-| **Component**    | **Running** | **Sleeping** |
-| ---------------- | -----------:| ------------:|
-| AT90USB1286      |     5.3  mA |         2 uA |
-| BOD              |     0.5  uA |       0.5 uA |
-| BLE              |     1.86 mA |         0 uA |
-| BLE MIC9406x     |     2    uA |       < 1 uA |
-| LDO              |    60    uA |        20 uA |
-| Matrix           |    15    uA |         0 uA |
-| LEDs             |     N/A     |      N/A     |
-| Battery Monitor  |  <  1    uA |       < 1 uA |
-| **TOTAL**        |     7.24 mA |     24.5  uA |
-| **500 mAh**      |   2.87 Days |   2.33 Years |
-| **1200 mAh**     |   6.9  Days |   5.59 Years |
-| **2500 mAh**     |  14.38 Days |  11.64 Years |   
+| **Component**    | **Running** | **Sleeping** | **10/90** |
+| ---------------- | -----------:| ------------:| ---------:|
+| AT90USB1286      |     5.3  mA |         2 uA |    532 uA |  
+| BOD              |     0.5  uA |       0.5 uA |    0.5 uA | 
+| BLE              |     1.86 mA |         0 uA |    186 uA | 
+| BLE MIC9406x     |     2    uA |       < 1 uA |    1.1 uA | 
+| LDO              |    60    uA |        20 uA |     24 uA | 
+| Matrix           |    15    uA |         0 uA |    1.5 uA | 
+| LEDs             |     N/A     |      N/A     |    N/A    |
+| Battery Monitor  |  <  1    uA |       < 1 uA |    < 1 uA | 
+| **TOTAL**        |     7.24 mA |     24.5  uA |    745 uA | 
+| **500 mAh**      |   2.87 Days |   2.33 Years |   28 Days |  
+| **1200 mAh**     |   6.9  Days |   5.59 Years | 2.2 Months|
+| **2500 mAh**     |  14.38 Days |  11.64 Years | 4.6 Months|
 
 Usage Model (Run/Sleep Duty Cycle)
 ----------------------------------
