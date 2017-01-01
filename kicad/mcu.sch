@@ -227,71 +227,37 @@ $EndComp
 $Comp
 L CONN_01X09 P?
 U 1 1 570C8996
-P 2600 7000
-F 0 "P?" H 2600 7500 50  0000 C CNN
-F 1 "CONN_01X09" V 2700 7000 50  0000 C CNN
-F 2 "" H 2600 7000 50  0000 C CNN
-F 3 "" H 2600 7000 50  0000 C CNN
-	1    2600 7000
+P 1950 6900
+F 0 "P?" H 1950 7400 50  0000 C CNN
+F 1 "CONN_01X09" V 2050 6900 50  0000 C CNN
+F 2 "" H 1950 6900 50  0000 C CNN
+F 3 "" H 1950 6900 50  0000 C CNN
+	1    1950 6900
 	1    0    0    -1  
 $EndComp
-Text Notes 2850 7400 0    60   ~ 0
+Text Notes 2200 7300 0    60   ~ 0
 BF BLE SPI Friend \n@ <= 4 MHz\n1 - SCK\n2 - MISO\n3 - MOSI\n4 - ~CS\n5 - IRQ\n6 - ~DFU\n7 - ~RESET\n8 - GND\n9 - VIN
-Text Label 1600 6600 0    60   ~ 0
+Text Label 950  6500 0    60   ~ 0
 BLE_SCK
-Text Label 1600 6700 0    60   ~ 0
+Text Label 950  6600 0    60   ~ 0
 BLE_MISO_TXO
-Text Label 1600 6800 0    60   ~ 0
+Text Label 950  6700 0    60   ~ 0
 BLE_MOSI_RXI
-Text Label 1600 6900 0    60   ~ 0
+Text Label 950  6800 0    60   ~ 0
 BLE_~CS~_~CTS
-Text Label 1600 7000 0    60   ~ 0
+Text Label 950  6900 0    60   ~ 0
 BLE_IRQ_~RTS
-NoConn ~ 2400 7200
 Text Label 6600 3700 0    60   ~ 0
 ~HWB
 $Comp
-L CONN_01X08 P?
-U 1 1 570C8E75
-P 4750 7050
-F 0 "P?" H 4750 7500 50  0000 C CNN
-F 1 "CONN_01X08" V 4850 7050 50  0000 C CNN
-F 2 "" H 4750 7050 50  0000 C CNN
-F 3 "" H 4750 7050 50  0000 C CNN
-	1    4750 7050
-	1    0    0    -1  
-$EndComp
-Text Notes 5000 7400 0    60   ~ 0
-BF BLE UART Friend\n@ 9600 Baud\n1 - MODE \n2 - ~CTS\n3 - TXO\n4 - RXI\n5 - VIN\n6 - ~RTS\n7 - GND\n8 - ~DFU
-NoConn ~ 4550 6700
-Text Label 3700 6800 0    60   ~ 0
-BLE_~CS~_~CTS
-Text Label 3700 6900 0    60   ~ 0
-BLE_MISO_TXO
-Text Label 3700 7000 0    60   ~ 0
-BLE_MOSI_RXI
-Text Label 3700 7200 0    60   ~ 0
-BLE_IRQ_~RTS
-$Comp
-L GND #PWR?
-U 1 1 570C92FE
-P 3650 7300
-F 0 "#PWR?" H 3650 7050 50  0001 C CNN
-F 1 "GND" V 3650 7100 50  0000 C CNN
-F 2 "" H 3650 7300 50  0000 C CNN
-F 3 "" H 3650 7300 50  0000 C CNN
-	1    3650 7300
-	0    1    1    0   
-$EndComp
-$Comp
 L GND #PWR?
 U 1 1 570C912C
-P 1950 7300
-F 0 "#PWR?" H 1950 7050 50  0001 C CNN
-F 1 "GND" V 1950 7100 50  0000 C CNN
-F 2 "" H 1950 7300 50  0000 C CNN
-F 3 "" H 1950 7300 50  0000 C CNN
-	1    1950 7300
+P 1300 7200
+F 0 "#PWR?" H 1300 6950 50  0001 C CNN
+F 1 "GND" V 1300 7000 50  0000 C CNN
+F 2 "" H 1300 7200 50  0000 C CNN
+F 3 "" H 1300 7200 50  0000 C CNN
+	1    1300 7200
 	0    1    1    0   
 $EndComp
 Entry Wire Line
@@ -316,8 +282,8 @@ Text Label 8550 5300 0    60   ~ 0
 ROW3
 Text Label 8550 5400 0    60   ~ 0
 ROW4
-Text Notes 4600 6300 2    60   ~ 0
-Bluetooth Low Engery (BLE) Headers\n- Adafruit Bluefruit SPI/UART Friend
+Text Notes 1150 6200 0    60   ~ 0
+Bluetooth Low Engery (BLE) Headers\n- Adafruit Bluefruit SPI Friend\n- Can double as expansion header
 $Comp
 L R R?
 U 1 1 570F2428
@@ -340,7 +306,6 @@ F 3 "" H 3850 4700 50  0000 C CNN
 	1    3850 4700
 	0    1    1    0   
 $EndComp
-NoConn ~ 6550 3900
 NoConn ~ 6550 3800
 Entry Wire Line
 	9400 4100 9500 4200
@@ -436,26 +401,14 @@ COL8
 $Comp
 L VCC #PWR?
 U 1 1 5711CF3B
-P 1950 7400
-F 0 "#PWR?" H 1950 7250 50  0001 C CNN
-F 1 "VCC" V 1950 7600 50  0000 C CNN
-F 2 "" H 1950 7400 50  0000 C CNN
-F 3 "" H 1950 7400 50  0000 C CNN
-	1    1950 7400
+P 1300 7300
+F 0 "#PWR?" H 1300 7150 50  0001 C CNN
+F 1 "VCC" V 1300 7500 50  0000 C CNN
+F 2 "" H 1300 7300 50  0000 C CNN
+F 3 "" H 1300 7300 50  0000 C CNN
+	1    1300 7300
 	0    -1   -1   0   
 $EndComp
-$Comp
-L VCC #PWR?
-U 1 1 5711D2CE
-P 3650 7100
-F 0 "#PWR?" H 3650 6950 50  0001 C CNN
-F 1 "VCC" V 3650 7300 50  0000 C CNN
-F 2 "" H 3650 7100 50  0000 C CNN
-F 3 "" H 3650 7100 50  0000 C CNN
-	1    3650 7100
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 4050 3200
 Text Notes 3700 2500 0    60   ~ 0
 +/-5%
 $Comp
@@ -491,8 +444,6 @@ F 3 "" H 3950 1350 50  0000 C CNN
 	1    3950 1350
 	1    0    0    -1  
 $EndComp
-Text HLabel 3550 5100 0    60   Output ~ 0
-BLE_PWR_EN
 Text HLabel 6900 1900 2    60   Input ~ 0
 VBAT_SENSE
 Text HLabel 3400 3100 0    60   Output ~ 0
@@ -510,9 +461,7 @@ F 3 "" H 2900 1400 50  0000 C CNN
 $EndComp
 Text Label 2950 5000 0    60   ~ 0
 BLE_DFU
-Text Label 1600 7100 0    60   ~ 0
-BLE_DFU
-Text Label 3700 7400 0    60   ~ 0
+Text Label 950  7000 0    60   ~ 0
 BLE_DFU
 Text HLabel 8900 5900 2    60   Output ~ 0
 CAPS_LED_EN
@@ -573,13 +522,7 @@ Entry Wire Line
 Entry Wire Line
 	7350 5300 7450 5400
 Wire Wire Line
-	3950 5400 3950 5500
-Wire Wire Line
-	3950 5500 3950 5600
-Wire Wire Line
-	3950 5600 3950 5700
-Wire Wire Line
-	3950 5700 3950 5750
+	3950 5400 3950 5750
 Wire Wire Line
 	3950 5400 4050 5400
 Wire Wire Line
@@ -592,16 +535,12 @@ Wire Wire Line
 	4050 5700 3950 5700
 Connection ~ 3950 5700
 Wire Wire Line
-	3050 2000 3950 2000
-Wire Wire Line
-	3950 2000 4050 2000
+	3050 2000 4050 2000
 Wire Wire Line
 	3950 1900 4050 1900
 Connection ~ 3950 1900
 Wire Wire Line
-	3050 1800 3950 1800
-Wire Wire Line
-	3950 1800 4050 1800
+	3050 1800 4050 1800
 Connection ~ 3950 1800
 Connection ~ 3950 1700
 Wire Wire Line
@@ -619,15 +558,11 @@ Wire Wire Line
 Wire Wire Line
 	1100 3100 1100 3200
 Wire Wire Line
-	2550 2000 2600 2000
-Wire Wire Line
-	2600 2000 2750 2000
+	2550 2000 2750 2000
 Wire Wire Line
 	1350 4350 1350 4450
 Wire Wire Line
-	1350 4450 1650 4450
-Wire Wire Line
-	1650 4450 1950 4450
+	1350 4450 1950 4450
 Wire Wire Line
 	1950 4450 1950 4350
 Wire Wire Line
@@ -636,17 +571,13 @@ Connection ~ 1650 4450
 Wire Wire Line
 	1350 3700 4050 3700
 Wire Wire Line
-	1350 3700 1350 3950
-Wire Wire Line
-	1350 3950 1350 4050
+	1350 3700 1350 4050
 Wire Wire Line
 	1350 3950 1500 3950
 Wire Wire Line
 	1800 3950 1950 3950
 Wire Wire Line
-	1950 3800 1950 3950
-Wire Wire Line
-	1950 3950 1950 4050
+	1950 3800 1950 4050
 Connection ~ 1350 3950
 Wire Wire Line
 	1950 3800 4050 3800
@@ -666,29 +597,17 @@ Wire Wire Line
 Wire Wire Line
 	7150 3700 7300 3700
 Wire Wire Line
-	2400 6600 1600 6600
+	1750 6500 950  6500
 Wire Wire Line
-	2400 6700 1600 6700
+	1750 6600 950  6600
 Wire Wire Line
-	2400 6800 1600 6800
+	1750 6700 950  6700
 Wire Wire Line
-	2400 6900 1600 6900
+	1750 6800 950  6800
 Wire Wire Line
-	2400 7000 1600 7000
+	1750 6900 950  6900
 Wire Wire Line
-	1950 7300 2400 7300
-Wire Wire Line
-	3650 7300 4550 7300
-Wire Wire Line
-	4550 6800 3700 6800
-Wire Wire Line
-	4550 6900 3700 6900
-Wire Wire Line
-	4550 7000 3700 7000
-Wire Wire Line
-	4550 7200 3700 7200
-Wire Wire Line
-	3550 5100 4050 5100
+	1300 7200 1750 7200
 Wire Wire Line
 	6550 5000 9100 5000
 Wire Wire Line
@@ -700,21 +619,9 @@ Wire Wire Line
 Wire Wire Line
 	7550 5300 9100 5300
 Wire Bus Line
-	9200 5100 9200 5200
+	9200 5100 9200 5650
 Wire Bus Line
-	9200 5200 9200 5300
-Wire Bus Line
-	9200 5300 9200 5400
-Wire Bus Line
-	9200 5400 9200 5500
-Wire Bus Line
-	9200 5500 9200 5650
-Wire Bus Line
-	9200 5200 9200 5300
-Wire Bus Line
-	9200 5300 9200 5400
-Wire Bus Line
-	9200 5400 9200 5500
+	9200 5200 9200 5500
 Wire Bus Line
 	9200 5650 10500 5650
 Wire Wire Line
@@ -742,35 +649,7 @@ Wire Wire Line
 Wire Bus Line
 	9500 5100 10500 5100
 Wire Bus Line
-	9500 2900 9500 3000
-Wire Bus Line
-	9500 3000 9500 3100
-Wire Bus Line
-	9500 3100 9500 3200
-Wire Bus Line
-	9500 3200 9500 3300
-Wire Bus Line
-	9500 3300 9500 3400
-Wire Bus Line
-	9500 3400 9500 3500
-Wire Bus Line
-	9500 3500 9500 4200
-Wire Bus Line
-	9500 4200 9500 4300
-Wire Bus Line
-	9500 4300 9500 4400
-Wire Bus Line
-	9500 4400 9500 4500
-Wire Bus Line
-	9500 4500 9500 4600
-Wire Bus Line
-	9500 4600 9500 4700
-Wire Bus Line
-	9500 4700 9500 4800
-Wire Bus Line
-	9500 4800 9500 4900
-Wire Bus Line
-	9500 4900 9500 5100
+	9500 2900 9500 5100
 Wire Wire Line
 	6550 2800 9400 2800
 Wire Wire Line
@@ -786,27 +665,17 @@ Wire Wire Line
 Wire Wire Line
 	6550 3400 9400 3400
 Wire Wire Line
-	1950 7400 2400 7400
-Wire Wire Line
-	3650 7100 4550 7100
+	1300 7300 1750 7300
 Wire Notes Line
-	1450 6350 5950 6350
+	800  6250 3150 6250
 Wire Notes Line
-	5950 6350 5950 7550
+	3150 6250 3150 7450
 Wire Notes Line
-	5950 7550 1450 7550
+	3150 7450 800  7450
 Wire Notes Line
-	1450 7550 1450 6350
+	800  7450 800  6250
 Wire Wire Line
-	3950 1350 3950 1600
-Wire Wire Line
-	3950 1600 3950 1700
-Wire Wire Line
-	3950 1700 3950 1800
-Wire Wire Line
-	3950 1800 3950 1900
-Wire Wire Line
-	3950 1900 3950 2000
+	3950 1350 3950 2000
 Wire Wire Line
 	3950 1700 4050 1700
 Wire Wire Line
@@ -819,9 +688,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3500 4050 3500
 Wire Wire Line
-	6550 1900 6700 1900
-Wire Wire Line
-	6700 1900 6900 1900
+	6550 1900 6900 1900
 Wire Wire Line
 	3400 3100 4050 3100
 Wire Wire Line
@@ -829,9 +696,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 5000 2950 5000
 Wire Wire Line
-	2400 7100 1600 7100
-Wire Wire Line
-	4550 7400 3700 7400
+	1750 7000 950  7000
 Wire Wire Line
 	6550 5700 7000 5700
 Wire Wire Line
@@ -844,11 +709,7 @@ Connection ~ 3950 1600
 Wire Wire Line
 	2750 1600 2600 1600
 Wire Wire Line
-	2600 1400 2600 1600
-Wire Wire Line
-	2600 1600 2600 1800
-Wire Wire Line
-	2600 1800 2600 2000
+	2600 1400 2600 2000
 Connection ~ 2600 2000
 Wire Wire Line
 	2750 1800 2600 1800
@@ -863,11 +724,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 5300 7350 5300
 Wire Bus Line
-	7450 5200 7450 5300
-Wire Bus Line
-	7450 5300 7450 5400
-Wire Bus Line
-	7450 5400 7450 5700
+	7450 5200 7450 5700
 Wire Bus Line
 	7450 5700 8250 5700
 Wire Wire Line
@@ -879,9 +736,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 5500 8350 5400
 Wire Bus Line
-	8250 5700 8250 2000
-Wire Bus Line
-	8250 2000 8250 1400
+	8250 5700 8250 1400
 Wire Bus Line
 	8250 1400 9750 1400
 $Comp
@@ -966,18 +821,14 @@ F 3 "" H 10500 2400 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	10500 1900 10500 2000
-Wire Wire Line
-	10500 2000 10500 2100
+	10500 1900 10500 2100
 Text Label 2950 3500 0    60   ~ 0
 ~RESET
 Wire Wire Line
 	9250 2000 10500 2000
 Connection ~ 10500 2000
 Wire Bus Line
-	9750 1400 9750 1700
-Wire Bus Line
-	9750 1700 9750 1800
+	9750 1400 9750 1800
 Wire Bus Line
 	8250 2450 8250 2450
 Text Label 9550 2000 2    60   ~ 0
@@ -1041,4 +892,19 @@ F 3 "" H 7350 2150 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7200 2150 7350 2150
+Text Notes 4600 6350 0    60   ~ 0
+- Might need to use AT90USB646\nfor 64K limitations of avrdude?\n- MIght need to use QFN package\njust for size reasons
+Wire Wire Line
+	4050 5100 2950 5100
+Text Label 2950 5100 0    60   ~ 0
+BLE_~RESET
+Wire Wire Line
+	1750 7100 950  7100
+Text Label 950  7100 0    60   ~ 0
+BLE_~RESET
+Text HLabel 7300 3900 2    60   Output ~ 0
+BLE_PWR_EN
+Wire Wire Line
+	6550 3900 7300 3900
+NoConn ~ 4050 3200
 $EndSCHEMATC

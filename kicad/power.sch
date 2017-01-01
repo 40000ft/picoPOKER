@@ -527,9 +527,7 @@ Text Notes 3150 750  0    60   ~ 0
 TODO: JST LiPo \nBattery Connector
 Connection ~ 2150 4300
 Wire Wire Line
-	2150 4100 2150 4300
-Wire Wire Line
-	2150 4300 2150 4400
+	2150 4100 2150 4400
 Wire Wire Line
 	2300 4300 2150 4300
 Connection ~ 2150 4800
@@ -538,9 +536,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 4600 2500 4800
 Wire Wire Line
-	2150 4700 2150 4800
-Wire Wire Line
-	2150 4800 2150 4900
+	2150 4700 2150 4900
 Wire Wire Line
 	2850 4300 2700 4300
 Wire Wire Line
@@ -552,13 +548,9 @@ Wire Wire Line
 	2850 4900 3200 4900
 Connection ~ 2850 5400
 Wire Wire Line
-	2850 5300 2850 5400
+	2850 5300 2850 5500
 Wire Wire Line
-	2850 5400 2850 5500
-Wire Wire Line
-	2850 4750 2850 4900
-Wire Wire Line
-	2850 4900 2850 5000
+	2850 4750 2850 5000
 Wire Wire Line
 	2850 4300 2850 4450
 Wire Wire Line
@@ -578,9 +570,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 4600 7600 4600
 Wire Wire Line
-	7000 1700 7000 2100
-Wire Wire Line
-	7000 2100 7000 4600
+	7000 1700 7000 4600
 Wire Wire Line
 	1350 1300 1350 1400
 Connection ~ 1100 1100
@@ -588,13 +578,9 @@ Wire Wire Line
 	1100 1200 1100 1100
 Connection ~ 700  1100
 Wire Wire Line
-	700  1000 700  1100
+	700  1000 700  1250
 Wire Wire Line
-	700  1100 700  1250
-Wire Wire Line
-	700  1100 1100 1100
-Wire Wire Line
-	1100 1100 1450 1100
+	700  1100 1450 1100
 Wire Wire Line
 	700  1550 700  1650
 Wire Wire Line
@@ -614,15 +600,11 @@ Connection ~ 2800 1100
 Wire Wire Line
 	2800 1600 2800 1700
 Wire Wire Line
-	2800 1000 2800 1100
-Wire Wire Line
-	2800 1100 2800 1300
+	2800 1000 2800 1300
 Wire Wire Line
 	2350 1100 2800 1100
 Wire Wire Line
-	2350 1300 2350 1650
-Wire Wire Line
-	2350 1650 2350 1700
+	2350 1300 2350 1700
 Wire Wire Line
 	2550 1200 2550 1300
 Wire Wire Line
@@ -631,27 +613,21 @@ Connection ~ 3200 1100
 Wire Wire Line
 	3300 1100 3200 1100
 Wire Wire Line
-	3200 1000 3200 1100
-Wire Wire Line
-	3200 1100 3200 1200
+	3200 1000 3200 1200
 Wire Wire Line
 	3200 1200 3300 1200
 Connection ~ 3200 1400
 Wire Wire Line
 	3300 1400 3200 1400
 Wire Wire Line
-	3200 1300 3200 1400
-Wire Wire Line
-	3200 1400 3200 1500
+	3200 1300 3200 1500
 Wire Wire Line
 	3300 1300 3200 1300
 Connection ~ 8700 2100
 Wire Wire Line
 	8700 2550 8700 2650
 Wire Wire Line
-	8700 1650 8700 2100
-Wire Wire Line
-	8700 2100 8700 2250
+	8700 1650 8700 2250
 Connection ~ 7500 2100
 Wire Wire Line
 	8500 2100 8700 2100
@@ -674,7 +650,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 2300 7500 2650
 Wire Wire Line
-	7500 2200 7500 2100
+	7500 2100 7500 2200
 $Comp
 L MIC5225 U?
 U 1 1 5715E81A
@@ -774,13 +750,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 2000 5600 2100
 Wire Wire Line
-	6900 2100 7000 2100
-Wire Wire Line
-	7000 2100 7250 2100
-Wire Wire Line
-	7250 2100 7500 2100
-Wire Wire Line
-	7500 2100 7600 2100
+	6900 2100 7600 2100
 Text Notes 6200 1900 0    60   ~ 0
 picoPOKER\nMain\nON / OFF \nSwitch
 $Comp
