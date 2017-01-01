@@ -35,9 +35,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "picoPOKER Keyboard"
-Date "2000-12-31"
+Date "2017-01-01"
 Rev "-"
-Comp ""
+Comp "otto.40000ft@gmail.com"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -148,13 +148,13 @@ Text Label 3400 950  2    60   ~ 0
 COL0
 Text Label 4400 950  2    60   ~ 0
 COL1
-Text Label 2300 2450 0    60   ~ 0
+Text Label 2700 2450 0    60   ~ 0
 ROW0
-Text Label 2300 3750 0    60   ~ 0
+Text Label 2700 3750 0    60   ~ 0
 ROW1
 Text Notes 5600 1000 0    197  ~ 0
 ...
-Text Notes 2300 4350 0    197  ~ 0
+Text Notes 2700 4350 0    197  ~ 0
 ...
 Text Label 6200 950  2    60   ~ 0
 COL14
@@ -213,7 +213,7 @@ F 3 "" H 3850 5400 50  0000 C CNN
 	1    3850 5400
 	0    -1   1    0   
 $EndComp
-Text Label 2300 5800 0    60   ~ 0
+Text Label 2700 5800 0    60   ~ 0
 ROW4
 $Comp
 L SW_PUSH SW?
@@ -276,11 +276,11 @@ Text Notes 5600 2050 0    197  ~ 0
 Text HLabel 1950 1600 0    60   BiDi ~ 0
 ~KEY_INT
 Entry Wire Line
-	2200 2550 2300 2450
+	2450 2350 2550 2450
 Entry Wire Line
-	2200 3850 2300 3750
+	2450 3650 2550 3750
 Entry Wire Line
-	2200 5900 2300 5800
+	2450 5700 2550 5800
 Text HLabel 1950 2000 0    60   BiDi ~ 0
 KEY_ROWS
 Entry Wire Line
@@ -394,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 950  4400 4750
 Wire Wire Line
-	2300 2450 6650 2450
+	2550 2450 6650 2450
 Wire Wire Line
 	3500 1300 3400 1300
 Connection ~ 3400 1300
@@ -435,7 +435,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3350 4050 3350
 Wire Wire Line
-	2300 3750 6650 3750
+	2550 3750 6650 3750
 Wire Wire Line
 	3850 3650 3850 3750
 Connection ~ 3850 3750
@@ -497,7 +497,7 @@ Wire Wire Line
 	6650 3750 6650 3650
 Connection ~ 6650 3750
 Wire Wire Line
-	2300 5800 6700 5800
+	2550 5800 6700 5800
 Wire Wire Line
 	3850 5000 3850 5100
 Connection ~ 3850 5000
@@ -541,9 +541,9 @@ Wire Wire Line
 	4900 5700 4900 5800
 Connection ~ 4900 5800
 Wire Bus Line
-	2200 2000 2200 5900
+	1950 2000 2450 2000
 Wire Bus Line
-	2200 2000 1950 2000
+	2450 2000 2450 5700
 Wire Bus Line
 	1950 850  6300 850 
 Wire Notes Line
@@ -587,4 +587,6 @@ Wire Wire Line
 	9900 2150 9900 2300
 Text Notes 9000 1200 0    60   ~ 0
 CAPS LED\n\nUse higher unregulated voltage\nto ensure the LED is driven.
+Text Notes 4000 6250 0    197  ~ 0
+TODO:  Wire up a proper matrix
 $EndSCHEMATC
