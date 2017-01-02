@@ -392,8 +392,8 @@ Text HLabel 7200 4700 0    60   Input ~ 0
 BLE_PWR_EN
 Text Notes 1400 750  0    60   ~ 0
 LiPo Battery Charger\nMCP73831-2ACI/OT
-Text Notes 5500 1350 0    60   ~ 0
-Can use either Battery or USB\n for primary power.\nPrevent battery voltage from \n passing to ext. 5V pin or \n to the charger input.
+Text Notes 4950 2950 0    60   ~ 0
+Can use either Battery or USB\n for primary power.\nAutomatically swtich to USB\n  Power when available.\nPrevent battery voltage from \n passing to ext. 5V pin or \n to the charger input.
 $Comp
 L MIC9406X U?
 U 1 1 571AFE5B
@@ -650,7 +650,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 2300 7500 2650
 Wire Wire Line
-	7500 2100 7500 2200
+	7500 2200 7500 2100
 $Comp
 L MIC5225 U?
 U 1 1 5715E81A
