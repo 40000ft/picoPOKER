@@ -35,7 +35,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "picoPOKER Keyboard"
-Date "2017-01-01"
+Date "2017-01-02"
 Rev "-"
 Comp "otto.40000ft@gmail.com"
 Comment1 ""
@@ -191,17 +191,17 @@ $EndComp
 NoConn ~ 4050 4000
 NoConn ~ 4050 4100
 Text Label 2950 4700 0    60   ~ 0
-BLE_MOSI_RXI
+BLE_MOSI
 Text Label 2950 4600 0    60   ~ 0
-BLE_MISO_TXO
+BLE_MISO
 Text Label 2950 4900 0    60   ~ 0
 BLE_SCK
 Text HLabel 2900 4400 0    60   BiDi ~ 0
 ~KEY_INT
 Text Label 2950 4500 0    60   ~ 0
-BLE_IRQ_~RTS
+BLE_IRQ
 Text Label 2950 4800 0    60   ~ 0
-BLE_~CS~_~CTS
+BLE_~CS
 $Comp
 L GND #PWR?
 U 1 1 570C87FB
@@ -240,13 +240,13 @@ BF BLE SPI Friend \n@ <= 4 MHz\n1 - SCK\n2 - MISO\n3 - MOSI\n4 - ~CS\n5 - IRQ\n6
 Text Label 950  6500 0    60   ~ 0
 BLE_SCK
 Text Label 950  6600 0    60   ~ 0
-BLE_MISO_TXO
+BLE_MISO
 Text Label 950  6700 0    60   ~ 0
-BLE_MOSI_RXI
+BLE_MOSI
 Text Label 950  6800 0    60   ~ 0
-BLE_~CS~_~CTS
+BLE_~CS
 Text Label 950  6900 0    60   ~ 0
-BLE_IRQ_~RTS
+BLE_IRQ
 Text Label 6600 3700 0    60   ~ 0
 ~HWB
 $Comp
@@ -460,9 +460,9 @@ F 3 "" H 2900 1400 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 2950 5000 0    60   ~ 0
-BLE_DFU
+BLE_~DFU
 Text Label 950  7000 0    60   ~ 0
-BLE_DFU
+BLE_~DFU
 Text HLabel 8900 5900 2    60   Output ~ 0
 CAPS_LED_EN
 NoConn ~ 6550 5600

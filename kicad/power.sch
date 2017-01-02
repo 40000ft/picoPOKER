@@ -35,7 +35,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "picoPOKER Keyboard"
-Date "2017-01-01"
+Date "2017-01-02"
 Rev "-"
 Comp "otto.40000ft@gmail.com"
 Comment1 ""
@@ -520,7 +520,7 @@ VBAT_SENSE_EN
 Text HLabel 3200 4900 2    60   Output ~ 0
 VBAT_SENSE
 Text Notes 1350 7400 0    60   ~ 0
-Battery Voltage Divider\n\nUsing 2.56V internal band gap reference:\nR1 = 100K, R2 = 154K\nVBAT 4.2 (max) --> Sense 2.54\nVBAT 3.0 (min) --> Sense 1.82\n\nNOTE: using internal reference may\n introduce as much as 7.8% error.  Due to\n this and the narrower sense range, \n AVCC reference would normally be preferred \n for the monitor.  However, due to the crude\n nature of the monitor to start with, and the \n complexity of monitoring a voltage not derived\n from VCC/AVCC, the internal band gap reference\n is selected.  If necessary to improve measurements, \n calibration offsets can be calculated and stored.
+Battery Voltage Divider\n\nUsing 2.56V internal band gap reference:\nR1 = 100K, R2 = 154K\nVBAT 4.2 (max) --> Sense 2.54\nVBAT 3.0 (min) --> Sense 1.82\n\nNOTE: using internal reference may\n introduce as much as 7.8% error.  Due to\n this, the additional power draw of the \n internal ref and the narrower sense range, \n AVCC reference would normally be preferred \n for the monitor.  However, due to the crude\n nature of the monitor to start with, and the \n complexity of monitoring a voltage not derived\n from VCC/AVCC, the internal band gap reference\n is selected.  If necessary to improve measurements, \n calibration offsets can be calculated and stored.
 Text Notes 4200 4000 2    60   ~ 0
 OR.... could just use another MIC9406x
 Text Notes 3150 750  0    60   ~ 0
@@ -663,8 +663,6 @@ F 3 "" H 8050 2100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7000 2100
-Text Notes 7350 6250 0    60   ~ 0
-NOTE:  This power topology\n  may not work with BF LE UART Friend\n  due to diode ORing on VIN.  The double \n  diode drop from the battery to the BF \n  UART Friend's LDO in this ciruit may be \n  too low as the battery drains.  Either:\n  - use the BF LE SPI Friend, which \n     doesn't have the VIN diode\n  - Modify your BF LE UART Friend to \n     remove and jumper the VIN diode
 Text Notes 2650 2500 2    60   ~ 0
 Diode ORd\nBATT/USB
 Text Notes 7850 1750 0    60   ~ 0
