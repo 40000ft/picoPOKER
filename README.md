@@ -20,15 +20,14 @@ NOTE:  Some of the following features require supporting-SW to enable.
 2. Popular Atmel AVR AT90USB1286 controller
   - Largely compatible with existing community SW
   - HW reset launches boot loader, similar to existing platforms
-  - Low power external BOD reset circuit for AVR, saves BOD power when BOD fuses are disabled
-    + [AVR180: External Brown-out Protection](http://www.atmel.com/Images/doc1051.pdf)
+  - Disable BOD fuses
     + If BOD fuses are enabled, the internal band-gap reference will be enabled in all sleep modes and will always consume power.  This will contribute significantly to power consumption and battery life.  The BOD fuses must be disabled.  
-  - powered by reulgated 3.3V or unregulated battery/VUSB, reduces power consumption
+  - powered by reulgated 3.3V LDO, reduces power consumption compared to 5V
   - 8MHz clock (max for 3.3V) 
-    + 16MHz @ 3.3V is technically overclocking, board can still have 16MHz crystal though
 3. USB 2.0 or Bluetooth 4.0 LE for keyboard protocol connection
-  - Can support simultaneous USB serial command and debug console (shares single USB connection when using USB for keyboard also)
-4. Supports [Adafruit BLE UART Friend](https://www.adafruit.com/products/2479) or [Adafruit BLE SPI Friend](https://www.adafruit.com/products/2633) Bluetooth 4.0 LE Radio Modules (select one)
+  - Can support simultaneous USB serial command and debug console (complex USB endpoint when using USB for keyboard also)
+  - Disable USB using magic boot options for best battery result
+4. Supports [Adafruit BLE SPI Friend](https://www.adafruit.com/products/2633) Bluetooth 4.0 LE Radio Module
   - low power: [BLE Friend Current Measurements](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend/current-measurements)
   - add-on peripheral soldered into PWB through a header
   - Bluetooth radio can be (de)powered under SW control when not in use to save power (deep sleep or disuse)
