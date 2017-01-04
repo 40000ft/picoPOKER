@@ -631,9 +631,6 @@ Wire Wire Line
 Connection ~ 7500 2100
 Wire Wire Line
 	8500 2100 8700 2100
-Wire Wire Line
-	7600 2200 7500 2200
-Connection ~ 7500 2200
 $Comp
 L GND #PWR?
 U 1 1 58658D37
@@ -649,8 +646,6 @@ Wire Wire Line
 	7600 2300 7500 2300
 Wire Wire Line
 	7500 2300 7500 2650
-Wire Wire Line
-	7500 2200 7500 2100
 $Comp
 L MIC5225 U?
 U 1 1 5715E81A
@@ -784,4 +779,8 @@ Text Notes 7750 4400 0    60   ~ 0
 MIC94060BC6
 Wire Wire Line
 	2150 5400 2850 5400
+Wire Wire Line
+	7500 2100 7500 2200
+Wire Wire Line
+	7500 2200 7600 2200
 $EndSCHEMATC

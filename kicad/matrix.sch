@@ -290,7 +290,7 @@ Entry Wire Line
 Entry Wire Line
 	6100 850  6200 950 
 Text HLabel 1950 850  0    60   BiDi ~ 0
-KEY_COL
+KEY_COLS
 Text Notes 950  6750 0    60   ~ 0
 Matrix Mode
 Text Notes 1000 7000 0    60   ~ 0
@@ -584,5 +584,5 @@ Wire Wire Line
 Text Notes 9000 1200 0    60   ~ 0
 CAPS LED\n\nUse higher unregulated voltage\nto ensure the LED is driven.
 Text Notes 4000 6250 0    197  ~ 0
-TODO:  Wire up a proper matrix
+TODO:  Wire up the full/real matrix
 $EndSCHEMATC
